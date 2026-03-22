@@ -1,0 +1,140 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #000;
+    color: #eee;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: black;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid gold;
+    z-index: 1000;
+}
+
+nav a {
+    margin: 0 15px;
+    color: gold;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    color: gold;
+}
+
+header p {
+    margin-top: 10px;
+    color: #bbb;
+}
+
+/* PROFILE IMAGE (SQUARE FIX) */
+.profile {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px; /* square with slight rounding */
+    border: 3px solid gold;
+    box-shadow: 0 0 20px rgba(255,215,0,0.4);
+    transition: 0.3s;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+}
+
+/* SECTIONS (CENTERED FIX) */
+section {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #111;
+    border-radius: 10px;
+    border-left: 5px solid red;
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
+    border-left: 5px solid gold;
+}
+
+/* HEADINGS */
+h2 {
+    color: gold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+/* LISTS */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* LINKS */
+a {
+    color: gold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid gold;
+    margin-top: 40px;
+    color: #888;
+}
+
+/* ANIMATION */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
